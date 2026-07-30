@@ -6,15 +6,15 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.m      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 16:33:45 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/07/27 17:53:33 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/07/30 08:22:18 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (1)
-	return (0)
+		return (1);
+	return (0);
 }

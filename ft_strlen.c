@@ -6,16 +6,16 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.m      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 17:56:32 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/07/27 17:59:58 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/07/30 08:22:39 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i] != '\0')
 		i++;

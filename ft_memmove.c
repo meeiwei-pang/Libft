@@ -1,0 +1,65 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pmeei-we <pmeei-we@student.42kl.edu.m      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/30 10:22:51 by pmeei-we          #+#    #+#             */
+/*   Updated: 2026/07/30 11:07:37 by pmeei-we         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+static void	ft_copy_forward(unsigned char *d, const unsigned char *s, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+}
+
+static void	ft_copy_backward(unsigned char *d, const unsigned char *s, size_t n)
+{
+	size_t	i;
+
+	i = n;
+	while (i > 0)
+	{
+		i--;
+		d[i] = s[i];
+	}
+}
+
+void	*ft_memmove(void *dst, const void *src, size_t n)
+{
+	unsigned char		*d;
+	const unsigned char	*s;
+
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	if (d == s || n == 0)
+		return (dst);
+	if (d < s)
+		ft_copy_forward(d, s, n);
+	else
+		ft_copy_backward(d, s, n);
+	return (dst);
+}
+/*
+#include <stdio.h>
+int	main(void)
+{
+	char	buf[10] = "ABCDEFGHI";
+
+	printf("Before: %s\n", buf);
+	ft_memmove(buf + 2, buf, 5);
+	printf("After : %s\n", buf);
+	return (0);
+}
+*/
