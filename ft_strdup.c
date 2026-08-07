@@ -6,7 +6,7 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 20:50:08 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/08/06 20:50:08 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:17:41 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 char	*ft_strdup(const char *s)
 {
 	char	*new_arr;
-	int	len;
-	int	i;
+	int		len;
+	int		i;
 
 	len = ft_strlen(s);
 	new_arr = (char *)malloc((len + 1) * sizeof (char));
 	if (new_arr == NULL)
-		return (NULL)
+		return (NULL);
 	i = 0;
 	while (s[i] != '\0')
 	{

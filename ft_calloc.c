@@ -6,7 +6,7 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 00:22:38 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/08/06 00:22:38 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:05:23 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (nmemb == 0 || size == 0)
 	{
 		result = malloc(1);
-		return(result);
+		return (result);
 	}
 	if (nmemb > (SIZE_MAX / size))
 		return (NULL);
@@ -69,14 +69,16 @@ int	main(void)
 	// Test 4: overflow case — should return NULL, not crash
 	printf("\n--- Test 4: overflow (SIZE_MAX, 2) ---\n");
 	arr = (int *)ft_calloc(SIZE_MAX, 2);
-	printf(arr == NULL ? "OK: got NULL as expected\n" : "FAILED: should have been NULL\n");
+	printf(arr == NULL ? "OK: got NULL as expected\n" 
+		: "FAILED: should have been NULL\n");
 	free(arr);
 
-	// Test 5: compare against real calloc for correctness (values should match — all zero)
+	// Test 5: compare the real calloc
 	printf("\n--- Test 5: matches real calloc behavior ---\n");
 	int *mine = (int *)ft_calloc(3, sizeof(int));
 	int *real = (int *)calloc(3, sizeof(int));
-	printf(memcmp(mine, real, 3 * sizeof(int)) == 0 ? "OK: identical output\n" : "FAILED: mismatch\n");
+	printf(memcmp(mine, real, 3 * sizeof(int)) == 0 ? "OK
+		: identical output\n" : "FAILED: mismatch\n");
 	free(mine);
 	free(real);
 

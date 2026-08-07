@@ -6,20 +6,20 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.m      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/30 11:12:05 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/07/30 12:45:03 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:22:59 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
-	void	*content;
+	void		*content;
 	struct s_list	*next;
 }	t_list;
 

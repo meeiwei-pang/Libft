@@ -6,12 +6,11 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/02 18:19:24 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/08/02 19:48:45 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:16:43 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -25,8 +24,9 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-
+/*
 #include <stdio.h>
+#include <string.h>
 int	main(void)
 {
 	char s[] = "Hello";
@@ -35,7 +35,7 @@ int	main(void)
 	char s1[] = "Hello";
 	printf("%s\n", strchr(s1, 'l'));
 }
-
+*/
 //return a pointer to the first occurance of c (byte) in s
 //return null if c is not founds
 //must return char *

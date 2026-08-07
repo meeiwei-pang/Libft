@@ -6,7 +6,7 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/06 00:17:54 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/08/06 00:17:54 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:18:15 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 int	main(void)
@@ -33,5 +33,5 @@ int	main(void)
 	printf("%d\n", ft_strncmp(s1, s2, 5));
 	printf("%d\n", strncmp(s1, s2, 5));
 }
-
+*/
 //unsigned - comparing same bytes

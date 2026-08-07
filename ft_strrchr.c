@@ -6,7 +6,7 @@
 /*   By: pmeei-we <pmeei-we@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 11:38:24 by pmeei-we          #+#    #+#             */
-/*   Updated: 2026/08/04 11:38:24 by pmeei-we         ###   ########.fr       */
+/*   Updated: 2026/08/07 11:20:40 by pmeei-we         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*last;
-	int	i;
+	int		i;
 
 	last = NULL;
 	i = 0;
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		if (s[i] == c)
 			last = (char *)(s + i);
-	i++;
+		i++;
 	}
 	return (last);
 }
